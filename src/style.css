@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0b2434;
+  padding: 20px;
+  font-family: "Karla", sans-serif;
+}
+
+main {
+  background-color: #f5f5f5;
+  height: 470px;
+  max-width: 800px;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dice-container {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+
+.die-face {
+  height: 50px;
+  width: 50px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: white;
+}
+
+.die-num {
+  font-size: 2rem;
+}
+
+.roll-dice {
+  height: 50px;
+  width: 100px;
+  border: none;
+  border-radius: 6px;
+  background-color: #5035ff;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Karla", sans-serif;
+  cursor: pointer;
+}
+
+.roll-dice:focus {
+  outline: none;
+}
+
+.roll-dice:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+.die {
+  display: flex;
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+.dice-container span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 500%;
+  background-color: black;
+}
+
+.one {
+  justify-content: center;
+  align-items: center;
+}
+.two {
+  justify-content: space-between;
+}
+
+.three span:nth-of-type(3) {
+  align-self: flex-end;
+}
+.three span:nth-of-type(2) {
+  align-self: center;
+}
+
+.four, .five, .six {
+  display: flex;
+  flex-flow: column;
+}
+ .row:first-child {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+ .row:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+}
+.six {
+    transform: rotate(90deg);
+}
+.five div:nth-child(2) {
+    align-self: center;
+}
+.parameters {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  font-weight: bold;
+}
